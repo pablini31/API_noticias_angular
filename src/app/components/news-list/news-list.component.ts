@@ -222,8 +222,8 @@ import { State } from '../../core/models/state.model';
       .filter-input:focus {
         outline: none;
         border-color: var(--color-accent-primary);
-        background: white;
-        box-shadow: 0 0 0 3px rgba(193, 39, 45, 0.1);
+        background: var(--color-bg-card);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
       }
 
       .filter-input option {
@@ -234,6 +234,27 @@ import { State } from '../../core/models/state.model';
 
       .filter-input option[value=""] {
         font-weight: 700;
+      }
+
+      /* Estilos específicos para modo oscuro */
+      :host-context(.dark) .filter-input {
+        background: var(--color-dark-bg-card);
+        color: var(--color-dark-text-primary);
+        border-color: var(--color-dark-border);
+      }
+
+      :host-context(.dark) .filter-input:hover {
+        border-color: var(--color-dark-accent);
+      }
+
+      :host-context(.dark) .filter-input:focus {
+        background: var(--color-dark-bg-secondary);
+        border-color: var(--color-dark-accent);
+      }
+
+      :host-context(.dark) .filter-input option {
+        background: var(--color-dark-bg-card);
+        color: var(--color-dark-text-primary);
       }
 
       /* ESTADOS DE CARGA */
