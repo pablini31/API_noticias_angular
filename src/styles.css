@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================================================
+   SISTEMA DE DISEÑO MINIMALISTA INSPIRADO EN JAPÓN
+   Paleta de colores, componentes y estilos globales
+   ============================================================================ */
+
+@import 'styles.global.css';
+
+/* Compatibilidad con variables antiguas (para transición) */
+:root {
+  --accent-500: var(--color-accent-primary);
+  --accent-600: var(--color-accent-primary-hover);
+  --accent-dark-500: var(--color-dark-accent);
+  --text-900: var(--color-text-primary);
+  --text-dark-100: var(--color-text-light);
+  --text-muted: var(--color-text-secondary);
+  --text-muted-dark: var(--color-text-light-secondary);
+  --white: var(--color-text-white);
+  --bg: var(--color-bg-primary);
+  --bg-dark: var(--color-dark-bg-primary);
+  --card-bg: var(--color-bg-card);
+  --card-bg-dark: var(--color-dark-bg-card);
+  --border: var(--color-border);
+  --border-dark: var(--color-dark-border);
+  --error-500: var(--color-error);
+  --error-700: var(--color-error-dark);
+  --error-bg: var(--color-error-bg);
+  --error-border: var(--color-error-border);
+  --accent-0-1: rgba(200, 76, 76, 0.1);
+  --accent-0-05: rgba(200, 76, 76, 0.05);
+  --black-0-05: rgba(0, 0, 0, 0.05);
+  --white-0-1: rgba(255, 255, 255, 0.1);
+}
+
